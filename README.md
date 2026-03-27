@@ -35,38 +35,13 @@ CONTRACT ADDRESS: c53e8437a633b118ddd3c401119031e866be092a83b6efe402ced9ad581b0c
 ============================================================
 ```
 
-## Local development
-
-Run against a local Midnight dev stack (no funded wallet needed):
-
-```bash
-# Start local node, indexer, and proof server
-yarn env:up
-
-# Deploy to local network
-yarn test:local
-
-# Tear down
-yarn env:down
-```
-
-Or all-in-one:
-
-```bash
-yarn validate
-```
-
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
 | `yarn test` | Run deploy test (defaults to local) |
-| `yarn test:local` | Deploy to local dev stack |
 | `yarn test:mainnet` | Deploy to mainnet (requires `MIDNIGHT_SEED`) |
-| `yarn compile` | Recompile contract from source (requires `compactc`) |
-| `yarn env:up` | Start local Docker stack |
-| `yarn env:down` | Stop local Docker stack |
-| `yarn validate` | Start local stack, deploy, tear down |
+| `yarn compile` | Recompile contract from source (requires `compact` CLI) |
 
 ## Environment variables
 
